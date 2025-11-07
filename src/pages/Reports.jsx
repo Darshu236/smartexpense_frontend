@@ -1,9 +1,10 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import jsPDF from 'jspdf';
-import autoTable from 'jspdf-autotable';
+import 'jspdf-autotable'; // ✅ no variable
 import { CSVLink } from 'react-csv';
 import './Reports.css';
 import CurrencyManager from '../utils/currencyManager';
+
 
 const Reports = () => {
   const [transactions, setTransactions] = useState([]);
